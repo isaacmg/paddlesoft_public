@@ -1,8 +1,13 @@
 class PossiblesController < ApplicationController
   before_action :set_possible, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate, except: [:new,:create]
   # GET /possibles
   # GET /possibles.json
+   def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+    username == ENV['USERNAMEV'] && password == ENV['PASSWORDV'] 
+    end 
+  end 
   def index
     @possibles = Possible.all
   end
