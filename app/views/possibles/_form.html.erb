@@ -11,20 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="actions" >
+   <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.label :email%><br>
+    <%= f.text_field :email, class:'form-control', id: "exampleInputEmail1", placeholder: "Enter email"  %>
   </div>
  
   <div class="field">
     <%= f.label :receive %><br>
     <%= f.check_box :receive %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  
+    <%= f.submit 'Get updates', class: 'btn btn-warning' %>
   </div>
 <% end %>

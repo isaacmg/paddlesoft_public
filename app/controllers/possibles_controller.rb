@@ -20,6 +20,7 @@ class PossiblesController < ApplicationController
   # GET /possibles/new
   def new
     @possible = Possible.new
+   
   end
 
   # GET /possibles/1/edit
