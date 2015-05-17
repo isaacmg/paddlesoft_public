@@ -48,4 +48,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'high_voltage', '~> 2.3.0'
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'rack-zippy'
 

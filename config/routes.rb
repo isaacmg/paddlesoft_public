@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :possibles
-  get '/home' => 'high_voltage/pages#show', id: 'home'
+    get '/home' => 'high_voltage/pages#show', id: 'home'
     root :to => 'high_voltage/pages#show', id: 'home'
     
   
