@@ -36,7 +36,7 @@ class PossiblesController < ApplicationController
       if @possible.save
         format.html { redirect_to @possible, notice: 'Possible was successfully created.' }
         format.json { render :show, status: :created, location: @possible }
-        InterestMailer.welcome_email(@possible).deliver_now
+        InterestMailer.welcome_email(@possible).deliver 
       else
         format.html { render :new }
         format.json { render json: @possible.errors, status: :unprocessable_entity }
