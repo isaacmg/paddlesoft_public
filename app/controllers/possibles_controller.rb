@@ -31,12 +31,16 @@ class PossiblesController < ApplicationController
   # POST /possibles.json
   def create
     @possible = Possible.new(possible_params)
-
+    client = request.env["HTTP_X_FORWARDED_FOR"] 
+    @possible.ip_add = client
     respond_to do |format|
       if @possible.save
+      
         format.html { redirect_to @possible, notice: 'Possible was successfully created.' }
         format.json { render :show, status: :created, location: @possible }
+        
         InterestMailer.welcome_email(@possible).deliver 
+        
       else
         format.html { render :new }
         format.json { render json: @possible.errors, status: :unprocessable_entity }

@@ -4,8 +4,9 @@
 .cover{
     color: rgb(255, 255, 255);
     position: relative;
-    min-height: 350px;
+    min-height: 495px;
     background: url(http://www.isaac26.com/cover.jpg) no-repeat scroll 0px 100% / cover transparent;
+    color: #FFCC00;
 }
 nav ul li {
   list-style:none;
