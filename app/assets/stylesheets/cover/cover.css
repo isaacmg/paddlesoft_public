@@ -5,7 +5,6 @@
     color: rgb(255, 255, 255);
     position: relative;
     min-height: 495px;
-    min-width: 400px;
     background: url(http://www.isaac26.com/cover.jpg) no-repeat scroll 0px 100% / cover transparent;
     color: #FFCC00;
 }
@@ -70,9 +69,11 @@ body {
   
   
 }
+.
 .about-faq 
 {
-	overflow: auto;
+	overflow: scroll;
+	
 }
 
 /* Padding for spacing */
@@ -115,6 +116,11 @@ body {
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
+}
+.video 
+{
+ margin-top: 100px;
+
 }
 
 @media (min-width: 768px) {
@@ -159,6 +165,7 @@ body {
   .masthead {
     position: fixed;
     top: 0;
+     margin-bottom: 100px;
   }
   .mastfoot {
     position: fixed;
@@ -180,6 +187,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }
