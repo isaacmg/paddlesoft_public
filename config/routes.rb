@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :developers
+
   resources :possibles
     get '/home' => 'high_voltage/pages#show', id: 'home'
     root :to => 'high_voltage/pages#show', id: 'home'

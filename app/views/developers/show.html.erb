@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @developer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @developer.email %>
+</p>
+
+<p>
+  <strong>Ip add:</strong>
+  <%= @developer.ip_add %>
+</p>
+
+<p>
+  <strong>Github user:</strong>
+  <%= @developer.github_user %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @developer.skills %>
+</p>
+
+<p>
+  <strong>Nd:</strong>
+  <%= @developer.nd %>
+</p>
+
+<%= link_to 'Edit', edit_developer_path(@developer) %> |
+<%= link_to 'Back', developers_path %>
