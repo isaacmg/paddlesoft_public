@@ -30,11 +30,16 @@ class DevelopersController < ApplicationController
   # POST /developers.json
   def create
     @developer = Developer.new(developer_params)
-
+	@developer.ip_add = request.remote_ip 
+	@developer.nd = false  
+	puts @developer.skills
+	
+	
     respond_to do |format|
       if @developer.save
         format.html { redirect_to @developer, notice: 'Developer was successfully created.' }
         format.json { render :show, status: :created, location: @developer }
+        InterestMailer.developer_welcome(@developer).deliver  
       else
         format.html { render :new }
         format.json { render json: @developer.errors, status: :unprocessable_entity }
@@ -74,6 +79,6 @@ class DevelopersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def developer_params
-      params.require(:developer).permit(:name, :email, :ip_add, :github_user, :skills, :nd)
+      params.require(:developer).permit(:name, :email, :ip_add, :github_user, :nd, skills [] )
     end
 end

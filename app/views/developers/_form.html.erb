@@ -13,29 +13,22 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Enter your name' %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, class: 'form-control', placeholder: 'Enter your email' %>
   </div>
-  <div class="field">
-    <%= f.label :ip_add %><br>
-    <%= f.text_field :ip_add %>
-  </div>
+ 
   <div class="field">
     <%= f.label :github_user %><br>
-    <%= f.text_field :github_user %>
+    <%= f.text_field :github_user, class: 'form-control', placeholder: 'Enter your Github username' %>
   </div>
   <div class="field">
     <%= f.label :skills %><br>
-    <%= f.text_area :skills %>
-  </div>
-  <div class="field">
-    <%= f.label :nd %><br>
-    <%= f.check_box :nd %>
+    <%= f.select :skills, [ ["Rails", "R"], ["JavaScript", "JS"], ["HTML/CSS ", "CSS"], ["Graph Algorithms", "GA"], ["Collaborative Filtering/Data Mining ", "CF"], ["Image Understanding", "IM"],   ["Android Development", "Droid"], ["iOS Development", "iOS"], ["Natural Language Processing", "NLP"], ["Machine Learning", "ML"], ["Computational Fluid Dynamics", "CFD"],  ["Linux Servers", "LX"], ["Penetration Testing/Security", "SEC"] ], {prompt: "Select skills"}, {:multiple => true, class: 'form-control'} %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Volunteer', class: 'btn btn-primary' %>
   </div>
 <% end %>
