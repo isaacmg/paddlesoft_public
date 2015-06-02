@@ -23,7 +23,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
+  
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -89,7 +89,7 @@ body {
  */
 .masthead-brand {
   margin-top: 10px;
-  margin-bottom: 20px;
+
   
 }
 
@@ -120,11 +120,7 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-.video 
-{
- margin-top: 100px; 
 
-}
 
 @media (min-width: 768px) {
   .masthead-brand {
