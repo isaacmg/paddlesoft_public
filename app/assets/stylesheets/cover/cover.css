@@ -5,7 +5,7 @@
 	
     color: rgb(255, 255, 255);
     position: relative;
-    min-height: 600px;
+    min-height: 800px;
     background: url(http://www.isaac26.com/cover.jpg) no-repeat scroll 0px 100% / cover transparent;
     color: #FFCC00;
    	margin: auto;
@@ -17,11 +17,15 @@ nav ul li {
   
 
 }
+
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
+}
+p.lead {
+background-color:#080000 
 }
   
 /* Custom default button */
@@ -137,12 +141,19 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
+.inner-cover
+{
+ position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+
 
 
 /*
@@ -163,7 +174,7 @@ body {
   /* Pull out the header and footer */
   .masthead {
 
-    top: 0;
+    bottom: 0;
     
   }
   .mastfoot {
