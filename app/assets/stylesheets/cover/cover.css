@@ -7,7 +7,7 @@
     position: relative;
     min-height: 800px;
     background: url(http://www.isaac26.com/cover.jpg) no-repeat scroll 0px 100% / cover transparent;
-    color: #FFCC00;
+    color: #00FF00;
    	margin: auto;
 }
 nav ul li {
@@ -27,6 +27,7 @@ a:hover {
 p.lead {
 background-color:#080000 
 }
+
   
 /* Custom default button */
 .btn-default,
