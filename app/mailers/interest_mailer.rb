@@ -1,5 +1,5 @@
 class InterestMailer < ActionMailer::Base
-  default from: "noreply@paddle-soft.com"
+  default from: "noreply@paddlesoft.net"
 
   def welcome_email(member)
        @member = member
