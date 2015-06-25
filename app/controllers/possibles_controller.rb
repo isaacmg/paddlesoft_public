@@ -80,6 +80,6 @@ class PossiblesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def possible_params
-      params.require(:possible).permit(:name, :email, :ip_add, :receive)
+      params.require(:possible).permit(:name, :email, :ip_add, :receive, :humanizer_answer, :humanizer_question_id)
     end
 end
